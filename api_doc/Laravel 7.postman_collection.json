@@ -1,0 +1,1129 @@
+{
+	"info": {
+		"_postman_id": "7dbb8c3e-0dfd-4203-8fd8-7bf35e245bb8",
+		"name": "Laravel 7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "List Of Categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQxYzBhYTY1MTAzNTM1YjE2MWI0ZDFkZDA2ZjBkOWNiZDdlYTE5MjcyODJmNmMzNmZkN2MzNGU4Yzk3MGU3OTAzMmVlODk4MDZmZGI1MTgiLCJpYXQiOjE2MzgwMzA1MzEuMzc1NTM4LCJuYmYiOjE2MzgwMzA1MzEuMzc1NTQzLCJleHAiOjE2Njk1NjY1MzEuMjkxMjIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.R-YbTBcTwJjJgDVbxYXrrOrmzGeFK_XvQWMOzac_hQmTNdoRSSNu_Ckfy4huNCFEsUC6dedUuwbmQb7DeFrpKbnptK_rIRGc_djua3UqEFUiH6D7kx9qd1e-hStZH2lzHEAtE7IxXLe4TFFYxPBhiwFyCrBY_WEZa12Vq2v__RqxV4XORP6ixv2BmFCie4SZIeBp1F0FX0bNbEoy8fSDtvod5Xz02CJXZJfBMlt9d2JK-eiVcoyU_a5SJ14gnU2ij691n--4tqgWF6jkIzThvDi_HvTJTY0WOh2cCKUjNKKEJGJUNWRMlMPHvN7CTpoCjIn7OQnyhi2DCyc8Nh4TNPm3wM1F9CWjs3rwJY4wmiChvUD81tkOM4NYhjKtARG8C04jy7hd_fFwNdAWd0-V2bENdGHiS1LAsarUmmrlpOykn4UNNIlwXQXqzUyH7owB5Qj96MtqfjPz77EFfqW2vfelbkNi4Xz_qpmpkfme1Eonjkd8b8I4gcXqBMALzWjGXZuSvk9xE-qBrXLGjSlWGa1uaAJclR57e13CNWY82e6xidIOgGkkxIRMKTaAUuDoVCKj5r-yOEwlI_8wI2nuXSKWaTwFTjy5fGJV6HX4d7GVM-KjUAEgGqQTI1yi-axoTR4_rLrj5xqEr4asgDCGOLfWqUoRwcJ7FcfbmlRjxRE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/categories/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Of Categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/categories/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Nov 2021 16:42:34 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Nov 2021 16:42:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"parent_id\": 0,\n            \"title\": \"Electronics\",\n            \"created_at\": \"2021-11-27T16:30:44.000000Z\",\n            \"updated_at\": \"2021-11-27T16:30:44.000000Z\",\n            \"children_recursive\": [\n                {\n                    \"id\": 3,\n                    \"parent_id\": 2,\n                    \"title\": \"Computers\",\n                    \"created_at\": \"2021-11-27T16:31:40.000000Z\",\n                    \"updated_at\": \"2021-11-27T16:31:40.000000Z\",\n                    \"children_recursive\": [\n                        {\n                            \"id\": 4,\n                            \"parent_id\": 3,\n                            \"title\": \"Laptops\",\n                            \"created_at\": \"2021-11-27T16:31:40.000000Z\",\n                            \"updated_at\": \"2021-11-27T16:31:40.000000Z\",\n                            \"children_recursive\": []\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Category",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDYzYjE4ZmY1YTdjN2RjY2NhNDg2MmQ0NDgwZTMxMGQ1NDU2ZWQzOTU4MzJhNDMyMmYxNWNjNTg4NjA0YjgzNDczNjVlZWMyODMxYmIxNjAiLCJpYXQiOjE2MzgwMjQ1MjQuNTU0MDM3LCJuYmYiOjE2MzgwMjQ1MjQuNTU0MDQxLCJleHAiOjE2Njk1NjA1MjQuNTQ5NjcxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.OW9JaiCDp9rtdXzLxvNEo6JjcxJy1k_Ws9LbazhSNi6qyURsdGqAdabymMV0sK8QAoo0COJ9oYl3hsxe3nfnx0Mn_VtQoq9P531EZwBfwpQWSWeTyOz4mCoUuIp9qogcKwC6wDyAJ02s1gRyy8lC5SkNeKOIli9IHSFI6vgyN1UAMktuQL44MTfFqU4mrdUMftCr_kf3738f8FW6JqYCsXMi5bHaleXwilBdi61PpJc6VSazQYA3VFXrdg262HLGa8sPDYWZiJp5cqtSDnT3Rt_fWbBXe9UyUvLEj-L8MKQXJK9lvge1J40zQ6otA6ipvwZqeBcFcqFnRVWtcZ6ROMvSmjFDKLWIVzYLLJqnTa5K0oR63HfFXwyziaa1G79ffJVpCS-z_rEod_x5Qk91BOxWvi6XrCKXLYhQ1ZDgLnx1hmKQPIu8x1feZU4yu5tgY1ZNFj-mgsCghjdp9ueo8KZklMBkm_e2zYTHwUi3XcMXmM72wx1Cx0LWVFv7K8BPYSUj_IKIDZpWDurQ6LwYr6pxvdZ3dIwV1irHS48W8KZJqrCD4i3l04hdUsJFBfWqrdx9ijqo8gZCthHYxfY4MfR0k5PVwhXB8t-kN4wYpFaDQP-UHJCh2glkJx0sIRjwQ-7W89vrOHCohRll5Jo_UxPxHohzouoI9ovQwARyeZY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"83d44617623a9f42abb91ad4e5e9d111\",\r\n    \"parent_id\": \"7e3c552e87cd2e520189c6d19c6f139e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/categories/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"22620c2c27bfec8ab72c0c7245572ae071876f0d4b52da983ffe078ae93892b2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/categories/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Nov 2021 16:30:45 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Nov 2021 16:30:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"New Category added successfully\",\n    \"data\": {\n        \"title\": \"Electronics\",\n        \"parent_id\": 0,\n        \"updated_at\": \"2021-11-27T16:30:44.000000Z\",\n        \"created_at\": \"2021-11-27T16:30:44.000000Z\",\n        \"id\": 2\n    }\n}"
+						},
+						{
+							"name": "Create Sub Category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"83d44617623a9f42abb91ad4e5e9d111\",\r\n    \"parent_id\": \"7e3c552e87cd2e520189c6d19c6f139e\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/categories/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Nov 2021 16:31:40 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Nov 2021 16:31:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"New Category added successfully\",\n    \"data\": {\n        \"title\": \"Computers\",\n        \"parent_id\": \"2\",\n        \"updated_at\": \"2021-11-27T16:31:40.000000Z\",\n        \"created_at\": \"2021-11-27T16:31:40.000000Z\",\n        \"id\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQxYzBhYTY1MTAzNTM1YjE2MWI0ZDFkZDA2ZjBkOWNiZDdlYTE5MjcyODJmNmMzNmZkN2MzNGU4Yzk3MGU3OTAzMmVlODk4MDZmZGI1MTgiLCJpYXQiOjE2MzgwMzA1MzEuMzc1NTM4LCJuYmYiOjE2MzgwMzA1MzEuMzc1NTQzLCJleHAiOjE2Njk1NjY1MzEuMjkxMjIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.R-YbTBcTwJjJgDVbxYXrrOrmzGeFK_XvQWMOzac_hQmTNdoRSSNu_Ckfy4huNCFEsUC6dedUuwbmQb7DeFrpKbnptK_rIRGc_djua3UqEFUiH6D7kx9qd1e-hStZH2lzHEAtE7IxXLe4TFFYxPBhiwFyCrBY_WEZa12Vq2v__RqxV4XORP6ixv2BmFCie4SZIeBp1F0FX0bNbEoy8fSDtvod5Xz02CJXZJfBMlt9d2JK-eiVcoyU_a5SJ14gnU2ij691n--4tqgWF6jkIzThvDi_HvTJTY0WOh2cCKUjNKKEJGJUNWRMlMPHvN7CTpoCjIn7OQnyhi2DCyc8Nh4TNPm3wM1F9CWjs3rwJY4wmiChvUD81tkOM4NYhjKtARG8C04jy7hd_fFwNdAWd0-V2bENdGHiS1LAsarUmmrlpOykn4UNNIlwXQXqzUyH7owB5Qj96MtqfjPz77EFfqW2vfelbkNi4Xz_qpmpkfme1Eonjkd8b8I4gcXqBMALzWjGXZuSvk9xE-qBrXLGjSlWGa1uaAJclR57e13CNWY82e6xidIOgGkkxIRMKTaAUuDoVCKj5r-yOEwlI_8wI2nuXSKWaTwFTjy5fGJV6HX4d7GVM-KjUAEgGqQTI1yi-axoTR4_rLrj5xqEr4asgDCGOLfWqUoRwcJ7FcfbmlRjxRE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"30611a4b0f6cf97852e95f0f987e089a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/categories/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories",
+								"delete"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Category",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"30611a4b0f6cf97852e95f0f987e089a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/categories/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"delete"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Nov 2021 16:51:56 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Nov 2021 16:51:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category removed successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "List Of Products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQxYzBhYTY1MTAzNTM1YjE2MWI0ZDFkZDA2ZjBkOWNiZDdlYTE5MjcyODJmNmMzNmZkN2MzNGU4Yzk3MGU3OTAzMmVlODk4MDZmZGI1MTgiLCJpYXQiOjE2MzgwMzA1MzEuMzc1NTM4LCJuYmYiOjE2MzgwMzA1MzEuMzc1NTQzLCJleHAiOjE2Njk1NjY1MzEuMjkxMjIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.R-YbTBcTwJjJgDVbxYXrrOrmzGeFK_XvQWMOzac_hQmTNdoRSSNu_Ckfy4huNCFEsUC6dedUuwbmQb7DeFrpKbnptK_rIRGc_djua3UqEFUiH6D7kx9qd1e-hStZH2lzHEAtE7IxXLe4TFFYxPBhiwFyCrBY_WEZa12Vq2v__RqxV4XORP6ixv2BmFCie4SZIeBp1F0FX0bNbEoy8fSDtvod5Xz02CJXZJfBMlt9d2JK-eiVcoyU_a5SJ14gnU2ij691n--4tqgWF6jkIzThvDi_HvTJTY0WOh2cCKUjNKKEJGJUNWRMlMPHvN7CTpoCjIn7OQnyhi2DCyc8Nh4TNPm3wM1F9CWjs3rwJY4wmiChvUD81tkOM4NYhjKtARG8C04jy7hd_fFwNdAWd0-V2bENdGHiS1LAsarUmmrlpOykn4UNNIlwXQXqzUyH7owB5Qj96MtqfjPz77EFfqW2vfelbkNi4Xz_qpmpkfme1Eonjkd8b8I4gcXqBMALzWjGXZuSvk9xE-qBrXLGjSlWGa1uaAJclR57e13CNWY82e6xidIOgGkkxIRMKTaAUuDoVCKj5r-yOEwlI_8wI2nuXSKWaTwFTjy5fGJV6HX4d7GVM-KjUAEgGqQTI1yi-axoTR4_rLrj5xqEr4asgDCGOLfWqUoRwcJ7FcfbmlRjxRE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/products/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Of Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/products/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Nov 2021 17:17:43 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Nov 2021 17:17:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"category_id\": 3,\n                \"name\": \"Dell PC\",\n                \"description\": \"Dell PC\",\n                \"created_at\": \"2021-11-27T22:44:28.000000Z\",\n                \"updated_at\": \"2021-11-27T22:44:36.000000Z\",\n                \"category\": {\n                    \"id\": 3,\n                    \"parent_id\": 2,\n                    \"title\": \"Computers\",\n                    \"created_at\": \"2021-11-27T16:31:40.000000Z\",\n                    \"updated_at\": \"2021-11-27T16:31:40.000000Z\"\n                }\n            }\n        ],\n        \"first_page_url\": \"http://localhost:8000/api/products/list?page=1\",\n        \"from\": 1,\n        \"last_page\": 1,\n        \"last_page_url\": \"http://localhost:8000/api/products/list?page=1\",\n        \"next_page_url\": null,\n        \"path\": \"http://localhost:8000/api/products/list\",\n        \"per_page\": 15,\n        \"prev_page_url\": null,\n        \"to\": 1,\n        \"total\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Product",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDYzYjE4ZmY1YTdjN2RjY2NhNDg2MmQ0NDgwZTMxMGQ1NDU2ZWQzOTU4MzJhNDMyMmYxNWNjNTg4NjA0YjgzNDczNjVlZWMyODMxYmIxNjAiLCJpYXQiOjE2MzgwMjQ1MjQuNTU0MDM3LCJuYmYiOjE2MzgwMjQ1MjQuNTU0MDQxLCJleHAiOjE2Njk1NjA1MjQuNTQ5NjcxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.OW9JaiCDp9rtdXzLxvNEo6JjcxJy1k_Ws9LbazhSNi6qyURsdGqAdabymMV0sK8QAoo0COJ9oYl3hsxe3nfnx0Mn_VtQoq9P531EZwBfwpQWSWeTyOz4mCoUuIp9qogcKwC6wDyAJ02s1gRyy8lC5SkNeKOIli9IHSFI6vgyN1UAMktuQL44MTfFqU4mrdUMftCr_kf3738f8FW6JqYCsXMi5bHaleXwilBdi61PpJc6VSazQYA3VFXrdg262HLGa8sPDYWZiJp5cqtSDnT3Rt_fWbBXe9UyUvLEj-L8MKQXJK9lvge1J40zQ6otA6ipvwZqeBcFcqFnRVWtcZ6ROMvSmjFDKLWIVzYLLJqnTa5K0oR63HfFXwyziaa1G79ffJVpCS-z_rEod_x5Qk91BOxWvi6XrCKXLYhQ1ZDgLnx1hmKQPIu8x1feZU4yu5tgY1ZNFj-mgsCghjdp9ueo8KZklMBkm_e2zYTHwUi3XcMXmM72wx1Cx0LWVFv7K8BPYSUj_IKIDZpWDurQ6LwYr6pxvdZ3dIwV1irHS48W8KZJqrCD4i3l04hdUsJFBfWqrdx9ijqo8gZCthHYxfY4MfR0k5PVwhXB8t-kN4wYpFaDQP-UHJCh2glkJx0sIRjwQ-7W89vrOHCohRll5Jo_UxPxHohzouoI9ovQwARyeZY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"714cdca83013c909f75a6f1d4975a432\",\r\n    \"description\":\"714cdca83013c909f75a6f1d4975a432\",\r\n    \"category_id\": \"70525e74ac8b4652e9a7b924286169f9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/products/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"714cdca83013c909f75a6f1d4975a432\",\r\n    \"description\":\"714cdca83013c909f75a6f1d4975a432\",\r\n    \"category_id\": \"70525e74ac8b4652e9a7b924286169f9\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/products/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Nov 2021 08:26:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Nov 2021 08:26:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"New Product added successfully\",\n    \"data\": {\n        \"name\": \"Dell PC\",\n        \"description\": \"Dell PC\",\n        \"category_id\": \"6\",\n        \"updated_at\": \"2021-11-28T08:26:33.000000Z\",\n        \"created_at\": \"2021-11-28T08:26:33.000000Z\",\n        \"id\": 4\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQxYzBhYTY1MTAzNTM1YjE2MWI0ZDFkZDA2ZjBkOWNiZDdlYTE5MjcyODJmNmMzNmZkN2MzNGU4Yzk3MGU3OTAzMmVlODk4MDZmZGI1MTgiLCJpYXQiOjE2MzgwMzA1MzEuMzc1NTM4LCJuYmYiOjE2MzgwMzA1MzEuMzc1NTQzLCJleHAiOjE2Njk1NjY1MzEuMjkxMjIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.R-YbTBcTwJjJgDVbxYXrrOrmzGeFK_XvQWMOzac_hQmTNdoRSSNu_Ckfy4huNCFEsUC6dedUuwbmQb7DeFrpKbnptK_rIRGc_djua3UqEFUiH6D7kx9qd1e-hStZH2lzHEAtE7IxXLe4TFFYxPBhiwFyCrBY_WEZa12Vq2v__RqxV4XORP6ixv2BmFCie4SZIeBp1F0FX0bNbEoy8fSDtvod5Xz02CJXZJfBMlt9d2JK-eiVcoyU_a5SJ14gnU2ij691n--4tqgWF6jkIzThvDi_HvTJTY0WOh2cCKUjNKKEJGJUNWRMlMPHvN7CTpoCjIn7OQnyhi2DCyc8Nh4TNPm3wM1F9CWjs3rwJY4wmiChvUD81tkOM4NYhjKtARG8C04jy7hd_fFwNdAWd0-V2bENdGHiS1LAsarUmmrlpOykn4UNNIlwXQXqzUyH7owB5Qj96MtqfjPz77EFfqW2vfelbkNi4Xz_qpmpkfme1Eonjkd8b8I4gcXqBMALzWjGXZuSvk9xE-qBrXLGjSlWGa1uaAJclR57e13CNWY82e6xidIOgGkkxIRMKTaAUuDoVCKj5r-yOEwlI_8wI2nuXSKWaTwFTjy5fGJV6HX4d7GVM-KjUAEgGqQTI1yi-axoTR4_rLrj5xqEr4asgDCGOLfWqUoRwcJ7FcfbmlRjxRE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"7e3c552e87cd2e520189c6d19c6f139e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/products/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"delete"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Product",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"7e3c552e87cd2e520189c6d19c6f139e\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/products/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products",
+										"delete"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Nov 2021 08:18:47 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Nov 2021 08:18:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product removed successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-requested-with",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"a015ce26bb0a98168974ae13628b1797c5e932bc33a95779b6d7354b51a35b1a\",\r\n    \"password\":\"c0816c5db3d886c65ae126fb602d414b\",\r\n    \"remember_me\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Auth Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"a015ce26bb0a98168974ae13628b1797c5e932bc33a95779b6d7354b51a35b1a\",\r\n    \"password\":\"c0816c5db3d886c65ae126fb602d414b\",\r\n    \"remember_me\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Nov 2021 16:28:51 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Nov 2021 16:28:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.26"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQxYzBhYTY1MTAzNTM1YjE2MWI0ZDFkZDA2ZjBkOWNiZDdlYTE5MjcyODJmNmMzNmZkN2MzNGU4Yzk3MGU3OTAzMmVlODk4MDZmZGI1MTgiLCJpYXQiOjE2MzgwMzA1MzEuMzc1NTM4LCJuYmYiOjE2MzgwMzA1MzEuMzc1NTQzLCJleHAiOjE2Njk1NjY1MzEuMjkxMjIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.R-YbTBcTwJjJgDVbxYXrrOrmzGeFK_XvQWMOzac_hQmTNdoRSSNu_Ckfy4huNCFEsUC6dedUuwbmQb7DeFrpKbnptK_rIRGc_djua3UqEFUiH6D7kx9qd1e-hStZH2lzHEAtE7IxXLe4TFFYxPBhiwFyCrBY_WEZa12Vq2v__RqxV4XORP6ixv2BmFCie4SZIeBp1F0FX0bNbEoy8fSDtvod5Xz02CJXZJfBMlt9d2JK-eiVcoyU_a5SJ14gnU2ij691n--4tqgWF6jkIzThvDi_HvTJTY0WOh2cCKUjNKKEJGJUNWRMlMPHvN7CTpoCjIn7OQnyhi2DCyc8Nh4TNPm3wM1F9CWjs3rwJY4wmiChvUD81tkOM4NYhjKtARG8C04jy7hd_fFwNdAWd0-V2bENdGHiS1LAsarUmmrlpOykn4UNNIlwXQXqzUyH7owB5Qj96MtqfjPz77EFfqW2vfelbkNi4Xz_qpmpkfme1Eonjkd8b8I4gcXqBMALzWjGXZuSvk9xE-qBrXLGjSlWGa1uaAJclR57e13CNWY82e6xidIOgGkkxIRMKTaAUuDoVCKj5r-yOEwlI_8wI2nuXSKWaTwFTjy5fGJV6HX4d7GVM-KjUAEgGqQTI1yi-axoTR4_rLrj5xqEr4asgDCGOLfWqUoRwcJ7FcfbmlRjxRE\",\n    \"token_type\": \"Bearer\",\n    \"expires_at\": \"2021-12-04 16:28:51\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Encrypt Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_title\":\"Electronics\",\r\n    \"sub_category_title\":\"Computers\",\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"Admin@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/encrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"encrypt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Encrypt Data",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_title\":\"Electronics\",\r\n    \"sub_category_title\":\"Computers\",\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"Admin@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/encrypt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"encrypt"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Nov 2021 16:23:08 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Nov 2021 16:23:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.26"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Strings encryted successfully\",\n    \"data\": {\n        \"Electronics\": \"22620c2c27bfec8ab72c0c7245572ae071876f0d4b52da983ffe078ae93892b2\",\n        \"Computers\": \"83d44617623a9f42abb91ad4e5e9d111\",\n        \"admin@gmail.com\": \"a015ce26bb0a98168974ae13628b1797c5e932bc33a95779b6d7354b51a35b1a\",\n        \"Admin@123\": \"c0816c5db3d886c65ae126fb602d414b\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Decrypt Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_title\":\"22620c2c27bfec8ab72c0c7245572ae071876f0d4b52da983ffe078ae93892b2\",\r\n    \"sub_category_title\":\"83d44617623a9f42abb91ad4e5e9d111\",\r\n    \"email\":\"a015ce26bb0a98168974ae13628b1797c5e932bc33a95779b6d7354b51a35b1a\",\r\n    \"password\":\"c0816c5db3d886c65ae126fb602d414b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/decrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"decrypt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Decrypt Data",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_title\":\"22620c2c27bfec8ab72c0c7245572ae071876f0d4b52da983ffe078ae93892b2\",\r\n    \"sub_category_title\":\"83d44617623a9f42abb91ad4e5e9d111\",\r\n    \"email\":\"a015ce26bb0a98168974ae13628b1797c5e932bc33a95779b6d7354b51a35b1a\",\r\n    \"password\":\"c0816c5db3d886c65ae126fb602d414b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/decrypt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"decrypt"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Nov 2021 16:25:11 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Nov 2021 16:25:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.26"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Strings decryted successfully\",\n    \"data\": {\n        \"22620c2c27bfec8ab72c0c7245572ae071876f0d4b52da983ffe078ae93892b2\": \"Electronics\",\n        \"83d44617623a9f42abb91ad4e5e9d111\": \"Computers\",\n        \"a015ce26bb0a98168974ae13628b1797c5e932bc33a95779b6d7354b51a35b1a\": \"admin@gmail.com\",\n        \"c0816c5db3d886c65ae126fb602d414b\": \"Admin@123\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
